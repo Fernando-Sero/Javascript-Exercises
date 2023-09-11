@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="title">
+        <h1>Problemas Propuestos</h1>
+        <h4>Tecnologias de Servicios Web</h4>
+      </section>
+      <ul>
+        <li>
+          <h1>Variables y Constantes</h1>
+          <ol type="I">
+            <li>
+              <p>
+                Mostar una variable y una variable constante en el navegador
+              </p>
+              <div id="variables1"></div>
+            </li>
+            <li>
+              <p>
+                Declara una constante que almacene el valor de π (pi) y otra
+                variable que almacene el radio de un círculo. Calcula y muestra
+                el área del círculo utilizando estas constantes.
+              </p>
+              <div id="variables2"></div>
+            </li>
+            <li>
+              <p>
+                Almacena un número en una variable y una cadena de texto en
+                otra. Luego, concatenar ambas en una frase y muéstrala en la
+                página.
+              </p>
+              <div id="variables3"></div>
+            </li>
+            <li>
+              <p>
+                Declara una constante que represente la gravedad (9.8 m/s²) y
+                una variable que represente el tiempo en segundos. Calcula y
+                muestra la velocidad final de un objeto en caída libre
+                utilizando estas constantes.
+              </p>
+              <div id="variables4"></div>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h1>Operadores</h1>
+          <ol type="I">
+            <li>
+              <p>
+                Implementar un formulario que permita al usuario ingresar dos
+                números y seleccionar una operación
+              </p>
+              <div id="operadores2">
+                <h4>Respuesta:</h4>
+                <input id="num1" type="text" placeholder="numero 1" />
+                <input id="num2" type="text" placeholder="numero 2" />
+
+                <button id="suma" class="operator-button">+</button>
+                <button id="resta" class="operator-button">-</button>
+                <button id="mul" class="operator-button">*</button>
+                <button id="div" class="operator-button">/</button>
+                <br />
+                <span id="resultado"></span>
+              </div>
+            </li>
+            <li>
+              <p>
+                Implementa un formulario que pida al usuario ingresar su edad.
+                Utiliza operadores relacionales para determinar si el usuario es
+                mayor de edad y muestra un mensaje correspondiente.
+              </p>
+              <div id="operadores3">
+                <h4>Respuesta:</h4>
+                <input id="edad" type="text" placeholder="edad" />
+                <button id="comprobar">comprobar</button>
+                <span id="edad-res"></span>
+              </div>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h1>Estructuras de Control</h1>
+          <ol type="I">
+            <li>
+              <p>
+                Crea una página que imprima los números del 1 al N utilizando un
+                bucle `for`.
+              </p>
+              <div id="control1">
+                <input id="numero" type="text" placeholder="numero" />
+                <button id="calcular">calcular</button>
+                <span id="resultado"></span>
+              </div>
+            </li>
+            <li>
+              <p>
+                Simula un juego de "adivina el número" en el que el usuario
+                tiene que adivinar un número secreto dentro de un rango. Utiliza
+                un bucle `while` para permitir que el usuario continúe
+                adivinando hasta que lo acierte.
+              </p>
+              <div id="control2">
+                <h4>Respuesta:</h4>
+                <input id="numero2" type="text" placeholder="numero" />
+                <button id="adivinar">adivinar</button>
+              </div>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h1>Manejo De Archivos</h1>
+          <ol>
+            <li>
+              <p>
+                Permitir al usuario cargar un archivo de imagen en una página
+                web
+              </p>
+              <form id="imageForm" enctype="multipart/form-data">
+                <label for="imagen">Subir una imagen:</label>
+                <input
+                  type="file"
+                  id="imagen"
+                  name="imagen"
+                  accept="image/*"
+                  required
+                />
+              </form>
+              <div id="imagenPrevia"></div>
+            </li>
+            <li>
+              <p>
+                Permite al usuario cargar un archivo de texto en la página.
+                Luego, muestra el contenido del archivo en un área de texto en
+                la página.
+              </p>
+              <form id="fileForm">
+                <label for="archivo">Selecciona un archivo de texto:</label>
+                <input
+                  type="file"
+                  id="archivo"
+                  name="archivo"
+                  accept=".txt"
+                  required
+                />
+              </form>
+              <textarea
+                id="contenidoTexto"
+                rows="10"
+                cols="50"
+                readonly
+                placeholder="text"
+              ></textarea>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <h1>Interaccion del DOM</h1>
+          <ol>
+            <li>
+              <p>
+                Crear una lista de tareas por hacer (to-do list) en una página
+                web
+              </p>
+              <input type="text" name="" id="tarea" placeholder="tarea" />
+              <button>agregar tarea</button>
+              <div id="tareas"></div>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    </main>
+    <script src="./scripts/variables.js"></script>
+    <script src="./scripts/operadores.js"></script>
+    <script src="./scripts/archivos.js"></script>
+  </body>
+</html>
